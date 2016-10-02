@@ -9,17 +9,18 @@ export default class NavHeader extends Component {
       <Navbar inverse>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">Portfolio Page</a>
+            <a href="#">Home</a>
           </Navbar.Brand>
         <Navbar.Toggle />
         </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <NavItem eventKey={1} href="#">Dashboard</NavItem>
-          <NavItem eventKey={2} href="#">Contact</NavItem>
+          <NavItem eventKey={1} href="#">Portfolio</NavItem>
+          <NavItem eventKey={2} href="#">About</NavItem>
+          <NavItem eventKey={3} href="#">Blogs</NavItem>
         </Nav>
         <Nav pullRight>
-          <NavItem eventKey={1} href="#">Link Right</NavItem>
+          <NavItem eventKey={1} href="#">Contact</NavItem>
           <NavItem eventKey={2} href="#">Link Right</NavItem>
         </Nav>
       </Navbar.Collapse>

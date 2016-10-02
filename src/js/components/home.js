@@ -1,11 +1,17 @@
 'use strict';
 
 import React, { Component } from 'react';
+import { Jumbotron, Button } from 'react-bootstrap';
+
 
 export default class Home extends Component {
 	render () {
 		return (
-			<div>Hi My Name is Ethan</div>
-		)
+  		<Jumbotron>
+    		<h1>Chang Ethan Lee</h1>
+    		<p>FullStack Developer</p>
+  			<p>Made with React.JS + React-Bootstrap</p>
+  		</Jumbotron>
+		);
 	}
 }
