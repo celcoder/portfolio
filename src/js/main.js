@@ -9,5 +9,4 @@ import MainContainer from './components/mainContainer';
 
 
 const app = document.getElementById('app');
-
 ReactDOM.render(<MainContainer />, app);

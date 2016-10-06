@@ -3,25 +3,34 @@ import { IndexLink, Link } from "react-router";
 import { Navbar, NavItem, MenuItem, NavDropdown, Nav } from 'react-bootstrap';
 
 
+const navBarContent = {
+  dashboard: 'DASHBOARD',
+  contacts: 'CONTACTS',
+  resume: 'RESUME'
+}
+
 export default class NavHeader extends Component {
   render() {
+    const navStyle = {
+      height: 80,
+      paddingTop: 20,
+    }
+    
+    const {dashboard, contacts, resume} = navBarContent;
+    
     return (  
-      <Navbar inverse>
+      <Navbar style={navStyle} className="navbar-fixed-top">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">Home</a>
+            <a href="#">Chang Ethan Lee</a>
           </Navbar.Brand>
         <Navbar.Toggle />
         </Navbar.Header>
       <Navbar.Collapse>
-        <Nav>
-          <NavItem eventKey={1} href="#">Portfolio</NavItem>
-          <NavItem eventKey={2} href="#">About</NavItem>
-          <NavItem eventKey={3} href="#">Blogs</NavItem>
-        </Nav>
         <Nav pullRight>
-          <NavItem eventKey={1} href="#">Contact</NavItem>
-          <NavItem eventKey={2} href="#">Link Right</NavItem>
+          <NavItem eventKey={1} href="#">{dashboard}</NavItem>
+          <NavItem eventKey={2} href="#">{contacts}</NavItem>
+          <NavItem eventKey={3} href="#">{resume}</NavItem>
         </Nav>
       </Navbar.Collapse>
       </Navbar>
