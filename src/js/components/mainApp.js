@@ -2,6 +2,8 @@
 
 import React, { Component, PropTypes } from 'react';
 
+import CodePen from './CodePen';
+import DashBoard from './dashBoard';
 import Home from './home';
 import NavHeader from './navHeader';
 
@@ -11,6 +13,8 @@ export default class MainApp extends Component {
   		<div>
   			<NavHeader />
 				<Home data={this.props.data} />
+				<DashBoard />
+				<CodePen />
 			</div>
 		);
 	}
